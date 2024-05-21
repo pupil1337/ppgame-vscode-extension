@@ -17,7 +17,21 @@
   ],
   "main": "./out/extension.js",
   "contributes": {
-    "commands": []
+    "configuration":[
+      {
+        "title": "ppgame",
+        "properties": {
+          "ppgame.launch_args": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "default": [],
+            "description": "从vscode debug启动项目时额外启动参数列表, 用于下拉列表选择"
+          }
+        }
+      }
+    ]
   },
   "scripts": {
     "vscode:prepublish": "npm run compile",
