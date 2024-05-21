@@ -9,15 +9,15 @@
   "categories": [
     "Other"
   ],
-  "activationEvents": [],
+  "repository": {
+    "url": "https://github.com/pupil1337/ppgame-vscode-extension"
+  },
+  "activationEvents": [
+    "onDebug"
+  ],
   "main": "./out/extension.js",
   "contributes": {
-    "commands": [
-      {
-        "command": "ppgame.launch_args",
-        "title": "ppgame launch args"
-      }
-    ]
+    "commands": []
   },
   "scripts": {
     "vscode:prepublish": "npm run compile",
