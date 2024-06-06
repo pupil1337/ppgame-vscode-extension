@@ -24,7 +24,26 @@
           "ppgame.launch_args": {
             "type": "array",
             "items": {
-              "type": "string"
+              "type": "object",
+              "title": "launch args",
+              "properties": {
+                "launchs": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  },
+                  "default": [],
+                  "description": "需要设置启动参数的launchs"
+                },
+                "args": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  },
+                  "default": [],
+                  "description": "这些launchs的额外参数"
+                }
+              }
             },
             "default": [],
             "description": "从vscode debug启动项目时额外启动参数列表, 用于下拉列表选择"
